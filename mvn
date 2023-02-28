@@ -1,0 +1,8 @@
+install maven in c:\programfile\Maven\
+in system var - new - MAVEN_HOME varvalue- c:pf\mv\mvver8.9.8
+in system var in path add -> %MAVEN_HOME%\bin 
+now open cmd and check mvn -version
+goto c:
+and perform
+mvn archetype:generate -DgroupId=com.chillyfacts.com -DartifactId=HelloWorldApp -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+java -cp target/HelloWorldApp-1.0-SNAPSHOT.jar com.chillyfacts.com.App
